@@ -62,6 +62,7 @@ Classification Report:
   weighted avg  1.00		    1.00     1.00		      45
 
 <img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/828fb3e3-63ca-415b-801c-0370be6cf0aa" />
+
 Exercise5 Output:
 Sample Data:
    label                                               text
@@ -87,7 +88,85 @@ New Email Predictions:
 'Congratulations! You've won a $1000 Walmart gift card. Click here to claim now.' → Spam
 'Hi John, just wanted to confirm our meeting tomorrow at 10 AM.' → Ham
 
+exercise 6 output:
+Classification Report:
+              precision    recall  f1-score   support
+           0       1.00      1.00      1.00         8
+           1       1.00      0.93      0.97        15
+           2       0.88      1.00      0.93         7
+    accuracy                           0.97        30
+   macro avg       0.96      0.98      0.97        30
+weighted avg       0.97      0.97      0.97        30
+<img width="455" height="413" alt="image" src="https://github.com/user-attachments/assets/a643bf59-46a8-47a1-a22a-a69c1cffec3b" />
 
 
+exercise 7 output:
+<img width="545" height="428" alt="image" src="https://github.com/user-attachments/assets/5f5eaf8c-45f6-4bba-82c4-5f25551cd8c5" />
+
+exercise 8 output:
+Model Accuracy: 0.8472
+Classification Report:
+              	 precision    recall  f1-score   support
+
+    Negative       0.84      0.86      0.85     12500
+    Positive       0.86      0.83      0.84     12500
+
+    accuracy                           0.85     25000
+   macro avg       0.85      0.85      0.85     25000
+weighted avg       0.85      0.85      0.85     25000
+
+New Review Predictions:
+'This movie was absolutely fantastic! The story, the acting, everything was great.' → Positive
+'I hated this movie. It was boring and a complete waste of time.' → Negative
+
+exercise 9 output:
+
+| age(29) | 0.00330033 |
++---------+------------+
+| age(34) | 0.00660066 |
++---------+------------+
+| age(35) | 0.0132013  |
++---------+------------+
+| age(37) | 0.00660066 |
++---------+------------+
+| age(38) | 0.00990099 |
++---------+------------+
+| age(39) | 0.0132013  |
++---------+------------+
+print(model.get_cpds('sex'))
+OUTPUT 
+| sex(0) | 0.316832 |
++--------+----------+
+| sex(1) | 0.683168 |
+
+print(model.get_cpds('exang'))
+OUTPUT 
+| exang(0) | 0.673267 |
++----------+----------+
+| exang(1) | 0.326733 |
++----------+----------+
+
+print(model.get_cpds('chol'))
+OUTPUT 
+| target    | target(0)            | target(1)            	                        		|
++-----------+----------------------+--------------------------------------------------- +
+| chol(126) | 0.0                  | 0.006060606060606061                           		|
++-----------+----------------------+----------------------------------------------------+
+| chol(131) | 0.007246376811594203 | 0.0                                            	 	|
++-----------+----------------------+----------------------------------------------------+
+| chol(141) | 0.0                  | 0.006060606060606061 	                          	|
++-----------+----------------------+----------------------------------------------------+
+| chol(149) | 0.007246376811594203 | 0.006060606060606061                             	|
++-----------+----------------------+----------------------------------------------------+
+| chol(157) | 0.0                  | 0.006060606060606061 	                          	|
++-----------+----------------------+----------------------------------------------------+
+
+exercise 10 output:
+Data shape: (3023, 5655)
+Target shape: (3023,)
+KNN Test accuracy (raw features): 0.23
+X_train_pca.shape: (1387, 100)
+KNN Test accuracy (PCA features): 0.29
+DNN Test Accuracy: 0.40
 
 
